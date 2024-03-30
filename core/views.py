@@ -26,7 +26,9 @@ def contact(request):
             subject,
             template,
             settings.EMAIL_HOST_USER,
-            ['marcelorobin@gmail.com','codigoparaprincipiantes@gmail.com']
+            # ACA VA EL CORREO O LA LISTA DE CORREOS A LOS QUE QUIERO ENVIAR ESTE EMAIL. PUEDE SER UNO O TANTOS COMO LOS QUE DESEE
+            # SI ES UNO SOLO, COLOCO EL CORREO UNICO ENTRE COMILLAS SIMPLES Y NADA MAS. SI AGREGO MÁS TENGO QUE SEPARARLOS CON UNA COMA ','
+            ['correo1@correo.com','correo2@correo.com']
         )
         emailSender.content_subtype = 'html'
         emailSender.fail_silently = False
